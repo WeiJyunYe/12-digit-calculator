@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/12-digit-calculator/static/css/main.d7d398d5.css",
+    "main.js": "/12-digit-calculator/static/js/main.dbc76ade.js",
+    "static/js/787.e47134a7.chunk.js": "/12-digit-calculator/static/js/787.e47134a7.chunk.js",
+    "index.html": "/12-digit-calculator/index.html",
+    "main.d7d398d5.css.map": "/12-digit-calculator/static/css/main.d7d398d5.css.map",
+    "main.dbc76ade.js.map": "/12-digit-calculator/static/js/main.dbc76ade.js.map",
+    "787.e47134a7.chunk.js.map": "/12-digit-calculator/static/js/787.e47134a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7d398d5.css",
+    "static/js/main.dbc76ade.js"
+  ]
+}
