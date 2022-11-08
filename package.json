@@ -1,6 +1,6 @@
 {
-  "name": "12-digits-calculator",
-  "homepage": "https://weijyunye.github.io/12-digits-calculator",
+  "name": "12-digit-calculator",
+  "homepage": "https://weijyunye.github.io/12-digit-calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
