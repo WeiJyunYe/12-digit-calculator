@@ -1,23 +1,23 @@
 import Button from "./Button";
 
-type arithmeticOperator = "+" | "-" | "x" | "÷"
-type Digit = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+type arithmeticOperator = "+" | "-" | "x" | "÷";
+type Digit = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
 interface PadProps {
-  onDigitButtonClick: (digit: Digit) => void
-  onPointButtonClick: () => void
-  onOperatorButtonClick: (operator: arithmeticOperator) => void
-  onPlusMinusSignButtonClick: () => void
-  onEqualButtonClick: () => void
-  onAllClearButtonClick: () => void
-  onClearEntryButtonClick: () => void
-  onMemoryPlusButtonClick: () => void
-  onMemoryMinusButtonClick: () => void
-  onMemoryClearButtonClick: () => void
-  onMemoryRecallButtonClick: () => void
+  onDigitButtonClick: (digit: Digit) => void;
+  onPointButtonClick: () => void;
+  onOperatorButtonClick: (operator: arithmeticOperator) => void;
+  onPlusMinusSignButtonClick: () => void;
+  onEqualButtonClick: () => void;
+  onAllClearButtonClick: () => void;
+  onClearEntryButtonClick: () => void;
+  onMemoryPlusButtonClick: () => void;
+  onMemoryMinusButtonClick: () => void;
+  onMemoryClearButtonClick: () => void;
+  onMemoryRecallButtonClick: () => void;
 }
 
-export default function Pad({
+const Pad: React.FC<PadProps> = ({
   onDigitButtonClick,
   onPointButtonClick,
   onOperatorButtonClick,
@@ -28,9 +28,8 @@ export default function Pad({
   onMemoryPlusButtonClick,
   onMemoryMinusButtonClick,
   onMemoryClearButtonClick,
-  onMemoryRecallButtonClick
-}: PadProps) {
-
+  onMemoryRecallButtonClick,
+}) => {
   return (
     <div>
       <div className="grid grid-cols-4">
@@ -57,7 +56,9 @@ export default function Pad({
         <Button onClick={() => onDigitButtonClick(0)}>0</Button>
         <Button onClick={onPointButtonClick}>.</Button>
         <Button onClick={onEqualButtonClick}>=</Button>
-      </div >
-    </div >
-  )
-}
+      </div>
+    </div>
+  );
+};
+
+export default Pad;
